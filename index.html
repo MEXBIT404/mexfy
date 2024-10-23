@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal contacts - Matrix Theme</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: black;
+            margin: 0;
+            padding: 20px;
+            color: #00FF00;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        h1, h2, p {
+            margin-bottom: 15px;
+        }
+        /* Matrix Background */
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <h1>CONTACTS,P.I</h1>
+        <div class="info">
+            <label for="name">Name:</label>
+            <p id="name">Musungu meshack</p>
+        </div>
+        <div class="info">
+            <label for="nickname">Nickname:</label>
+            <p id="nickname">MEX</p>
+        </div>
+        <div class="info">
+            <label for="phone">Phone Number:</label>
+            <p id="phone">+254705282205</p>
+        </div>
+        <div class="info">
+            <label for="email">Email:</label>
+            <p id="email">musungumeshack1.com</p>
+        </div>
+        <div class="info">
+            <label for="instagram">Instagram:</label>
+            <p id="instagram">@mex.mesh</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
